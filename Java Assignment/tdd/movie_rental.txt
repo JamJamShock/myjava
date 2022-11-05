@@ -1,0 +1,81 @@
+=Please add code to this project following TDD as closely as possible.
+
+Phase I 
+=======
+
+This movie rental application computes total rental cost and total
+customer points when a customer rents movies. The movie type can be in 
+one of the three: Children, Regular, New Release. In the future, we
+might want add more Movie types.  The logic for computing rental
+cost and customer point is highly likely to be changed in the future.
+
+-when a customer rents movies, we want to compute the total rental 
+    cost and total customer points - Use the skeleton Customer
+    and CustomerTest that are provided.
+    
+-rental amount gets computed as following
+   	-Children's movie - $1 per day for the first 7 days and $2 after that 
+   	-Regular movie - $2 per day for the first 5 days and $3 after that
+   	-New release - $3 per day for the first 3 days, $6 dollars after that
+   	
+-customer point is computed as following
+	-each day a movie is rented, 1 point is added
+	-for new release, extra 1 point is added for each day
+	
+-for each 5 customer points, $0.30 discount gets applied
+
+-we want to generate customer receipt that has customer name, the total 
+   rental cost as a simple text. 
+   
+-make sure "computing individual rental cost" and "computing individual 
+   customer point" methods are in the Rental class not in the Customer class 
+   - if not, see how you can refactor
+   
+-See if computing total rental cost and total customer points can be refactored
+   to use Java 8 streams and lambda
+
+Phase II
+========
+
+-Use strategy pattern for computing rental cost for each movie type
+-Use strategy pattern for computing customer points for each movie type
+
+
+Phase III
+=========
+
+-We want to add supporting a new movie type - Cartoon
+-We want to display each movie, and days rented, along with total cost, total points 
+ in the customer receipt
+-We want to generate customer receipt not only in text, but also in 
+ HTML, possibly in JSON
+-We want to modify the logic of computing customer points for children's movie
+
+ Solution
+ ========
+ 
+ -One solution project (up to first requirement of Phase II) is provided 
+  as "movie-rental-tdd-final" under "solutions_maven" directory.  It is
+  version controlled with git.  You can get a particular version using
+  "git checkout <revision>".  The following is the result of "git log --oneline"
+  
+  3b61af7 readme.txt is updated
+  601484b strategy pattern is used for computing individual rental cost
+  9778d0c RentalTest class is added with tests
+  13a1af0 computing total cost and computing total points logics are now refactored to use stream and lambda
+  9ef25af computeIndividualCustomerPoints method is moved to Rental.java
+  59865a0 computeIndividualCustomerPoints method captures computing individual customer points
+  d3aa008 computeIndivisaulRentalCost method is moved to Rental.java
+  1eb4f8e Individual cost calculation is extracted as a separate method
+  f054476 readme.txt is updated
+  38764ca Generating receipt logic is added, Customer class is moved to src/main/java
+  86b1cd9 Discount based on customer points is applied to the pricing
+  d220de2 Customer point calculation logic is added
+  f4c55b5 Multiple rentals cost calculation is tested
+  57b6306 fixed untracked files
+  998a753 New release movie rental cost logic is added
+  e1d401c Regular movie rental cost logic is added'
+  d2f152d if statement is changed to switch statement
+  9983ed9 Children's movie rental cost calculation is added
+  a495863 Customer class has name and List<Rental> fields
+  f10f4ba Initial project

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Assignment-1/Assignment-1.iml" filepath="$PROJECT_DIR$/Assignment-1/Assignment-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo/Demo.iml" filepath="$PROJECT_DIR$/Demo/Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Doubly-linkedlist/Doubly-linkedlist.iml" filepath="$PROJECT_DIR$/Doubly-linkedlist/Doubly-linkedlist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Forloopclock/Forloopclock.iml" filepath="$PROJECT_DIR$/Forloopclock/Forloopclock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QueueDemo/QueueDemo.iml" filepath="$PROJECT_DIR$/QueueDemo/QueueDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Simple-link-list/Simple-link-list.iml" filepath="$PROJECT_DIR$/Simple-link-list/Simple-link-list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StackDemo/StackDemo.iml" filepath="$PROJECT_DIR$/StackDemo/StackDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm/algorithm.iml" filepath="$PROJECT_DIR$/algorithm/algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/array-demo/array-demo.iml" filepath="$PROJECT_DIR$/array-demo/array-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/bootcamp-2.iml" filepath="$PROJECT_DIR$/.idea/bootcamp-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nested-loop-test/nested-loop-test.iml" filepath="$PROJECT_DIR$/nested-loop-test/nested-loop-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/student-demo/student-demo.iml" filepath="$PROJECT_DIR$/student-demo/student-demo.iml" />
+    </modules>
+  </component>
+</project>

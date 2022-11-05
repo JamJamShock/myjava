@@ -1,0 +1,81 @@
+
+Mandatory requirements
+======================
+
+-Create a simple String calculator with a method int Add(string input)
+
+-When empty string "" is given, the add method should return 0
+
+-When a single number string such as "1" or "2" is given, the add 
+ method should return 1 or 2
+ 
+-When two number string with comma delimiter such as "1,2" or "2,3" is
+ given, the add method should return the sum, 3 or 5 respectively
+ 
+-When multiple number string with comma delimiter such as "1,2,3" or
+"1,2,3,4" is given, the add method should return the sum, 6 and 10
+ respectively
+ 
+-Allow the usage of new line "\n" as a delimiter, for example, "1\n2"
+ and "1\n2,3" should return 3 and 6 respectively
+ 
+-When a negative number is given, the add method will throw an RuntimeException
+ with a message "Negative numbers not allowed: <first-negative-number>".  
+ For example, when "1,-2,3,-4,-5" is given, the add method should throw
+ an exception with "Negative numbers not allowed: -2" message
+ 
+-When a number that is bigger than 1000 is given, the add method should ignore it,
+ for example, when "2,1005,5" is given, it should result in 7
+ 
+   
+Optional requirements
+=====================
+
+-User-defined delimiter should be supported. User can specify the user
+ defined delimiter with the format of  “//[delimiter]\n[numbers…]”,
+ for example, “//;\n1;2” should result in 3
+ 
+ You can use Matcher and Patterns classes as following:
+ 		
+ 	Matcher matcher = Pattern.compile("^//(.)\n(.*)").matcher(input);
+	String delimeters = getDelimeters(matcher);
+	String numberString = getNumbers(input, matcher);
+ 
+-When a negative number is given, the add method will throw an RuntimeException
+ with a message "Negative numbers not allowed: <list of negative numbers>"
+ For example, when "1,-2,3,-4,-5" is given, the add method should throw 
+ an exception with "Negative numbers not allowed: -2 -4 -5" message
+ 
+ Acknowledgement
+ ===============
+ 
+ -This exercise is based on String calculator description from http://osherove.com/tdd-kata-1/
+ 
+ Solution
+ ========
+ 
+ -One solution project (only the mandatory requirements) is provided 
+  as "string-calculator-tdd-final" under "solutions_maven" directory.  It is
+  version controlled with git.  You can get a particular version using
+  "git checkout <revision>".  The following shows the result of 
+  "git log --oneline"
+  
+  4337210 readme.txt is updated
+  1708e21 numbers greater than 1000 are ignored
+  be54b6c Throw an exception with a message
+  7ac0d5c Throw an exception with dummy message case is handled
+  1ab483a Throw an exception when negative number is given
+  27f0cfd Delimeter spelling is corrected to Delimiter
+  ae45cbb readme.txt is rewritten
+  89f136f handle new line delimeter
+  b1e7933 refactored to handle empty string inside removeDelimeter() method, if statement in removeDelimeter() method is also cleaned up
+  d56a6f6 refactored to use List of String rather than String array
+  b662591 refactor removing delimeter logic into removeDelimeter() method
+  e3c314a computeSum() is refactored to use stream
+  32c8734 computing sum logic is extracted to computeSum() method
+  ec22709 add test of unknown number of number strings
+  5dd1d42 handles two numbers
+  96e70fa returns 0 when empty string is given
+  79263c9 Initial state
+ 
+

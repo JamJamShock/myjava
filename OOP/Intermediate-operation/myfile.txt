@@ -1,0 +1,3 @@
+A JavaScript library for application development
+using cloud services, which supports
+GraphQL backend and React components for working with GraphQL data.
