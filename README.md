@@ -49,4 +49,4 @@ Each algorithm is accompanied by explanations of its approach, implementation de
 Feel free to explore the code examples in this repository. You can clone the repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/your-username/data-structures-and-algorithms-java.git
+git clone https://github.com/Win-Thu-Rein-Tun/DSA-Java.git
