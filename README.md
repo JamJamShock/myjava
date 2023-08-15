@@ -44,6 +44,12 @@ In this section, you'll find various algorithms that cover a wide range of probl
 
 Each algorithm is accompanied by explanations of its approach, implementation details, and analysis of time and space complexity. You'll also find examples of how to apply these algorithms to solve real-world problems.
 
+## License
+
+This repository is licensed under the MIT License. You are free to use the code for your personal and educational purposes. If you use this repository or its code in your projects, attribution is appreciated but not required.
+
+Happy coding and exploring the world of data structures and algorithms with Java!
+
 ## Usage
 
 Feel free to explore the code examples in this repository. You can clone the repository to your local machine using the following command:
